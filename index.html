@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bali in One Screen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="progressBar"></div>
+
+    <div id="loader">
+      <h1>Bali in One Screen</h1>
+    </div>
+
+    <div class="cursor"></div>
+
+    <header>
+      <div class="logo">Bali in One Screen</div>
+      <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <!-- MENU -->
+    <div class="fullscreen-menu" id="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#tradition">Traditions</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <p class="mini">THE LIVING HERITAGE</p>
+        <h1>Bali <span>In One</span> Screen</h1>
+        <p class="sub">
+          Discover sacred ceremonies, hidden traditions, and timeless stories of
+          Bali.
+        </p>
+        <a href="#tradition" class="btn">Start Journey</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section split reveal" id="about">
+      <div class="left">
+        <img src="img/About.jpg.jpg" alt="About Bali" />
+      </div>
+
+      <div class="right">
+        <h2>More Than Paradise</h2>
+        <p>
+          Bali is globally known for its beaches and scenery, but the true soul
+          of Bali lives in its traditions, rituals, temples, arts, and daily
+          spiritual life.
+        </p>
+      </div>
+    </section>
+
+    <!-- TRADITIONS -->
+    <section class="section reveal" id="tradition">
+      <h2 class="center">Traditions of Bali</h2>
+
+      <div class="cards">
+        <div
+          class="card"
+          onclick="
+            openPopup(
+              'Melasti',
+              'Sacred sea purification ritual before Nyepi.',
+              'img/melasti-gallery-2.jpg.png',
+              'melasti.html',
+            )
+          "
+        >
+          <h3>Melasti</h3>
+          <p>Sacred sea purification ritual before Nyepi.</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="
+            openPopup(
+              'Ogoh-Ogoh',
+              'Giant artistic statues paraded before Nyepi.',
+              'img/ogoh-ogoh-cover.jpg.jpg',
+              'ogoh-ogoh.html',
+            )
+          "
+        >
+          <h3>Ogoh-Ogoh</h3>
+          <p>Giant statues paraded before Nyepi night.</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="
+            openPopup(
+              'Nyepi',
+              'The sacred Day of Silence in Bali.',
+              'img/nyepi-cover.jpg.png',
+              'nyepi.html',
+            )
+          "
+        >
+          <h3>Nyepi</h3>
+          <p>The Day of Silence for reflection and balance.</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="
+            openPopup(
+              'Omed-Omedan',
+              'Unique social tradition celebrated in Sesetan after Nyepi.',
+              'img/omed-omedan-hero.jpg.png',
+              'omed-omedan.html',
+            )
+          "
+        >
+          <h3>Omed-Omedan</h3>
+          <p>Unique social tradition celebrated in Sesetan.</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="
+            openPopup(
+              'Mekotek',
+              'Traditional stick ritual symbolizing unity and courage.',
+              'img/mekotek-2.jpg.png',
+              'mekotek.html',
+            )
+          "
+        >
+          <h3>Mekotek</h3>
+          <p>Traditional stick ritual symbolizing unity.</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="
+            openPopup(
+              'Mekare-Kare',
+              'Sacred pandan leaf duel from Tenganan honoring bravery and heritage.',
+              'img/mekare-kare-cover.jpg.png',
+              'mekare-kare.html',
+            )
+          "
+        >
+          <h3>Mekare-Kare</h3>
+          <p>Sacred pandan duel in Tenganan village.</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="
+            openPopup(
+              'Penjor',
+              'Decorated bamboo poles symbolizing gratitude and prosperity.',
+              'img/penjor-cover.jpg.jpg',
+              'penjor.html',
+            )
+          "
+        >
+          <h3>Penjor</h3>
+          <p>Decorated bamboo poles of gratitude and prosperity.</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="
+            openPopup(
+              'Galungan',
+              'Victory of dharma over adharma across Bali.',
+              'img/galungan-cover.jpg.png',
+              'galungan.html',
+            )
+          "
+        >
+          <h3>Galungan</h3>
+          <p>Victory of dharma over adharma.</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="
+            openPopup(
+              'Kuningan',
+              'Closing celebration honoring ancestral spirits.',
+              'img/kuningan-cover.jpg.png',
+              'kuningan.html',
+            )
+          "
+        >
+          <h3>Kuningan</h3>
+          <p>Closing celebration honoring ancestors.</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="
+            openPopup(
+              'Ngaben',
+              'Balinese cremation ceremony guiding the soul onward.',
+              'img/ngaben-cover.jpg.png',
+              'ngaben.html',
+            )
+          "
+        >
+          <h3>Ngaben</h3>
+          <p>Balinese cremation ceremony guiding the soul.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section reveal" id="gallery">
+      <h2 class="center">Visual Bali</h2>
+
+      <div class="gallery">
+        <img src="img/mekare-kare-cover.jpg.png" />
+        <img src="img/melasti-gallery-2.jpg.png" />
+        <img src="img/ogoh-ogoh-cover.jpg.jpg" />
+        <img src="img/omed-omedan-hero.jpg.png" />
+      </div>
+    </section>
+
+    <!-- POPUP -->
+    <div class="popup" id="popup">
+      <div class="popup-box">
+        <span class="close-popup" onclick="closePopup()">×</span>
+
+        <img id="popupImg" src="img/melasti-gallery.jpg" />
+
+        <h2 id="popupTitle">Title</h2>
+
+        <p id="popupDesc">Description</p>
+
+        <a id="popupLink" href="#" class="btn">Read Full Article</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        © 2026 Bali in One Screen • Preserving Culture Digitally | by Harrys
+        Primaharta
+      </p>
+    </footer>
+
+    <button id="topBtn">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
